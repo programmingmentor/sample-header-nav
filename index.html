@@ -8,18 +8,18 @@
     <title>Bakery Website</title>
     <link rel="shortcut icon" href="img/bread-shorticon.png" type="image/png">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="header__background">
             <div class="header__container container">
-                <nav data-include="header-nav.partial.html"></nav>
-                <section data-include="index.header-intro.partial.html"></section>
+                <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="header-nav.partial.html"></nav>
+                <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-intro.partial.html"></section>
             </div>
         </div>
     </header>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
     <script type="module" src="./js/index.js"></script>
 </body>
 
