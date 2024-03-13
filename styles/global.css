@@ -65,9 +65,8 @@ a {
     text-decoration: none;
 }
 
-.fixed {
-    width: 100%;
-    position: fixed;
+.overflow-hidden {
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {

@@ -4,11 +4,11 @@ const btnSub = document.querySelector(".header__menu-btn");
 const navLinks = document.querySelector(".header__nav-menu");
 
 btnSub.addEventListener("click", () => {
-    body.classList.toggle("fixed");
-    header.classList.toggle("responsive");
+    body.classList.toggle("overflow-hidden");
+    header.classList.toggle("nav-visible");
 })
 
 navLinks.addEventListener("click", () => {
-    body.classList.remove("fixed");
-    header.classList.remove("responsive");
+    body.classList.remove("overflow-hidden");
+    header.classList.remove("nav-visible");
 })
